@@ -61,7 +61,7 @@ $(function(){
   };
 
   //. 初期位置を中心とした地図を OpenStreetMap データで表示
-  map = L.map('demoMap', { dragging: false, zoomControl: false, minZoom: zoomlevel, maxZoom: zoomlevel }).setView( [ lat, lng ], zoomlevel );
+  map = L.map('demoMap').setView( [ lat, lng ], zoomlevel );
   L.tileLayer(
     'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: 'Map data &copy; <a href="http://openstreetmap.org/">OpenStreetMap</a>',
